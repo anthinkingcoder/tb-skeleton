@@ -1,10 +1,10 @@
 $prefix: '.tb-skeleton';
 
 #{$prefix} {
-  width: 100%;
   //background: #99a9bf;
-  background: #dcdcdc;
+  width: 0;
   height: 0;
+  background: #dcdcdc;
   &--circle {
     border-radius: 50%;
   }

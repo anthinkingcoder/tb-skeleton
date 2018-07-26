@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>skeleton demo</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-  <script src="simple-grid.noextra.js"></script>
-  <script src="../dist/tb-skeleton.noextra.js"></script>
+  <link rel="proload" href="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js" as="script">
+  <link rel="proload" href="simple-grid.noextra.js" as="script">
+  <link rel="proload" href="../dist/tb-skeleton.noextra.js" as="script">
+
+
     <style>
       * {
         box-sizing: border-box;
@@ -14,15 +16,15 @@
 </head>
 <body>
 <div id="app">
-  <skeleton :them="opacity">
-    <row style="width:400px;height:300px;box-sizing: border-box">
+  <skeleton theme="opacity" style="width:200px" bg-color="#dcdcdc">
+    <row>
       <i-col :span="8">
-        <tb-skeleton :aspect-ratio="1" shape="circle">
+        <tb-skeleton :aspect-ratio="1" shape="circle" bg-color="red" >
         </tb-skeleton>
       </i-col>
       <i-col :span="16">
         <row>
-          <i-col :span="12" style="margin-left: 10px">
+          <i-col :span="12" style="margin-left: 10px;margin-top: 10px">
             <tb-skeleton :aspect-ratio="0.2"></tb-skeleton>
           </i-col>
           <i-col :span="24" style="margin-left: 10px;margin-top: 10px">
@@ -37,6 +39,9 @@
   </skeleton>
 </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+<script src="simple-grid.noextra.js"></script>
+<script src="../dist/tb-skeleton.noextra.js"></script>
 <script>
   var app = new Vue({
     el: '#app'

@@ -5,18 +5,40 @@
 </template>
 
 <script>
+  import emitter from '../mixins/emitter'
+
   export default {
+    name: 'skeleton',
     props: {
       theme: {type: [String, Number], default: 'normal'},
+      bgColor: {type: [String]}
     },
     data() {
-      return {}
+      return {
+
+      }
+    },
+    mixins: {
+      emitter
     },
     mounted() {
       //通知tb-Skeleton设置theme
-      this.$children.forEach((children) => {
-        console.info(children)
-      })
+      this.broadcastChildren(this, 'tb-skeleton', 'set-style')
+    },
+    methods: {
+      broadcastChildren(el, componentName, eventName) {
+        let $children = el.$children
+        if ($children && $children.length > 0) {
+          $children.forEach((child) => {
+            let name = child.$options.name
+            if (name === componentName) {
+              console.info([name, this.bgColor])
+              child.$emit.apply(child, [eventName, {'theme':this.theme, 'bgColor':this.bgColor}])
+            }
+            this.broadcastChildren(child, componentName, eventName)
+          })
+        }
+      }
     }
   }
 </script>
