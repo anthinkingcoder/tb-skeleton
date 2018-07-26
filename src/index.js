@@ -1,15 +1,13 @@
-import {Col, Row} from './components'
-import './styles/grid.scss'
+import {TbSkeleton,Skeleton} from './components'
 const install = function (Vue) {
-  Vue.component('Col', Col);
-  Vue.component('Row', Row);
-  Vue.component('iCol', Col);
+  Vue.component('TbSkeleton', TbSkeleton);
+  Vue.component('Skeleton', Skeleton)
 };
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 export default {
   install,
-  Col,
-  Row
+  TbSkeleton,
+  Skeleton
 };

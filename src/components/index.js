@@ -1,5 +1,4 @@
-import Col from './col.vue'
-import Row from './row.vue'
-import '../styles/grid.scss'
-export {Col, Row};
+import TbSkeleton from './TbSkeleton.vue'
+import Skeleton from './Skeleton.vue'
+export {TbSkeleton,Skeleton};
 
