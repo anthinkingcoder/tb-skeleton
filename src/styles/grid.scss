@@ -1,0 +1,109 @@
+$prefix: '.simple';
+$row-prefix: '#{$prefix}-row';
+$col-prefix: '#{$prefix}-col';
+$flex-row-prefix: '#{$row-prefix}-flex';
+$flex-justifies: ('start', 'end', 'center', 'space-around', 'space-between');
+$flex-aligns: ('top':'flex-start', 'middle':'center', 'bottom':'flex-end');
+$grid-col: 24;
+@mixin generate-row {
+  #{$row-prefix} {
+    display: block;
+    position: relative;
+    margin: 0;
+    height: auto;
+    zoom: 1;
+    overflow: hidden;
+  }
+  #{$flex-row-prefix} {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #{$col-prefix} {
+    display: block;
+    position: relative;
+  }
+  #{$flex-row-prefix}, #{$flex-row-prefix}, #{$col-prefix} {
+    box-sizing: border-box;
+  }
+  @each $justify in $flex-justifies {
+    #{$flex-row-prefix}-#{$justify} {
+      justify-content: #{$justify};
+    }
+  }
+  @each $key, $value in $flex-aligns {
+    #{$flex-row-prefix}-#{$key} {
+      align-items: #{$value};
+    }
+  }
+}
+
+@mixin generate-float-col($viewport:'') {
+  $cols: '#{$col-prefix}-span#{$viewport}-1';
+  @for $i from 2 through $grid-col {
+    $cols: '#{$cols},#{$col-prefix}-span#{$viewport}-#{$i},';
+  }
+  #{$cols} {
+    float: left;
+    flex: 0 0 auto;
+  }
+}
+
+@mixin generate-col($viewport: '') {
+  @for $i from 1 through $grid-col {
+    #{$col-prefix}-span#{$viewport}-#{$i} {
+      width: percentage($i / $grid-col);
+    }
+
+    #{$col-prefix}-push#{$viewport}-#{$i} {
+      left: percentage($i / $grid-col);
+    }
+
+    #{$col-prefix}-pull#{$viewport}-#{$i} {
+      right: percentage($i / $grid-col);
+    }
+
+    #{$col-prefix}-offset#{$viewport}-#{$i} {
+      margin-left: percentage($i / $grid-col);
+    }
+
+    #{$col-prefix}-order#{$viewport}-#{$i} {
+      order: #{$i};
+    }
+  }
+}
+
+@mixin generate-grid($viewport) {
+  @include generate-float-col($viewport);
+  @include generate-col($viewport);
+}
+
+@include generate-row();
+@include generate-grid('');
+@media (max-width: 768px) {
+  @include generate-grid('-xs');
+}
+
+@media (min-width: 768px) {
+  @include generate-grid('-sm');
+}
+
+@media (min-width: 992px) {
+  @include generate-grid('-md');
+}
+
+@media (min-width: 1200px) {
+  @include generate-grid('-lg');
+}
+
+
+
+
+
+
+
+
+
+
+
+
