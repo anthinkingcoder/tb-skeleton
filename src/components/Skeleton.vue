@@ -11,7 +11,8 @@
     name: 'skeleton',
     props: {
       theme: {type: [String, Number], default: 'normal'},
-      bgColor: {type: [String]}
+      bgColor: {type: [String]},
+      shape: {type:[String]}
     },
     data() {
       return {
@@ -33,7 +34,7 @@
             let name = child.$options.name
             if (name === componentName) {
               console.info([name, this.bgColor])
-              child.$emit.apply(child, [eventName, {'theme':this.theme, 'bgColor':this.bgColor}])
+              child.$emit.apply(child, [eventName, {'theme':this.theme, 'bgColor':this.bgColor,'shape':this.shape}])
             }
             this.broadcastChildren(child, componentName, eventName)
           })

@@ -9,49 +9,62 @@
   export default {
     name: 'tb-skeleton',
     props: {
-      shape: {type: String, default: ''}, //circle or ''
+      shape: {type: String}, //circle or radius or default
       theme: {type: [String, Number]},
       aspectRatio: {type: [String, Number], default: 1}, //长宽比
       width: {type: [String, Number], default: '100%', require: false},
       height: {type: [String, Number], require: false},
-      bgColor: {type:[String]}
+      bgColor: {type: [String]}
     },
     data() {
       return {
         curTheme: this.theme,
-        curBgColor: this.bgColor
+        curBgColor: this.bgColor,
+        curShape: this.shape
       }
     },
     computed: {
       classList() {
         let classList = []
         classList.push(PREFIX)
-        if (this.shape === 'circle') {
+
+        //set shape
+        if (this.curShape === 'circle') {
           classList.push(`${PREFIX}--circle`)
+        } else if (this.curShape === 'radius') {
+          classList.push(`${PREFIX}--radius`)
         }
+
+        //set theme
         if (this.curTheme === 'opacity') {
           classList.push(`${PREFIX}--opacity`)
         } else if (this.curTheme === 'gradient') {
           classList.push(`${PREFIX}--gradient`)
         }
+
+
         return classList
       },
       styleList() {
         return {
           'padding-bottom': this.height || `${this.aspectRatio * 100}%`,
           'width': this.width,
-          'background-color': this.curBgColor
+          'background-color': this.curBgColor,
         }
       }
     },
     created() {
+      // update style
       this.$on('set-style', (style) => {
-//        console.info(style)
         if (!this.theme && style.theme) {
           this.curTheme = style.theme
         }
         if (style.bgColor && !this.bgColor) {
           this.curBgColor = style.bgColor
+        }
+
+        if (style.shape && !this.curShape) {
+          this.curShape = style.shape
         }
       })
     }

@@ -5,6 +5,10 @@ $prefix: '.tb-skeleton';
   width: 0;
   height: 0;
   background: #dcdcdc;
+  &--radius {
+    border-radius: 4px;
+  }
+
   &--circle {
     border-radius: 50%;
   }
@@ -13,17 +17,17 @@ $prefix: '.tb-skeleton';
     animation: opacity 2s linear infinite normal
   }
   &--gradient {
-    background: linear-gradient(to right,rgba(220,220,220,.3) 13%,rgba(220,220,220,1) 14%);
+    background: linear-gradient(to right, rgba(220, 220, 220, .3) 13%, rgba(220, 220, 220, 1) 14%);
     animation: gradient 1s linear infinite normal;
     background-size: 200% 100%;
   }
 }
 
 @keyframes gradient {
-  0%{
+  0% {
     background-position: 100% 0
   }
-  100%{
+  100% {
     background-position: -100% 0
   }
 }
