@@ -12,12 +12,10 @@
     props: {
       theme: {type: [String, Number], default: 'normal'},
       bgColor: {type: [String]},
-      shape: {type:[String]}
+      shape: {type: [String]}
     },
     data() {
-      return {
-
-      }
+      return {}
     },
     mixins: {
       emitter
@@ -33,7 +31,7 @@
           $children.forEach((child) => {
             let name = child.$options.name
             if (name === componentName) {
-              child.$emit.apply(child, [eventName, {'theme':this.theme, 'bgColor':this.bgColor,'shape':this.shape}])
+              child.$emit.apply(child, [eventName, {'theme': this.theme, 'bgColor': this.bgColor, 'shape': this.shape}])
             }
             this.broadcastChildren(child, componentName, eventName)
           })

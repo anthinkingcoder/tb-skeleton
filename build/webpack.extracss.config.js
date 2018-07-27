@@ -33,7 +33,7 @@ module.exports = merge(webpackBaseConfig, {
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
       // both options are optional
-      filename: "simple-grid.css",
+      filename: "tb-skeleton.css",
       chunkFilename: "[id].css"
     })
   ]
