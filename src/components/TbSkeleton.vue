@@ -12,7 +12,7 @@
       shape: {type: String}, //circle or radius or default
       theme: {type: [String, Number]},
       aspectRatio: {type: [String, Number], default: 1}, //长宽比
-      width: {type: [String, Number], default: '100%', require: false},
+      width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
       bgColor: {type: [String]}
     },
@@ -20,10 +20,16 @@
       return {
         curTheme: this.theme,
         curBgColor: this.bgColor,
-        curShape: this.shape
+        curShape: this.shape,
       }
     },
     computed: {
+      curHeight () {
+        if (!isNaN(this.height)) {
+          return `${this.height}px`
+        }
+        return this.height
+      },
       classList() {
         let classList = []
         classList.push(PREFIX)
@@ -47,7 +53,7 @@
       },
       styleList() {
         return {
-          'padding-bottom': this.height || `${this.aspectRatio * 100}%`,
+          'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
           'width': this.width,
           'background-color': this.curBgColor,
         }
