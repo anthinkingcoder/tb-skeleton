@@ -33,7 +33,6 @@
           $children.forEach((child) => {
             let name = child.$options.name
             if (name === componentName) {
-              console.info([name, this.bgColor])
               child.$emit.apply(child, [eventName, {'theme':this.theme, 'bgColor':this.bgColor,'shape':this.shape}])
             }
             this.broadcastChildren(child, componentName, eventName)

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-  const PREFIX = 'tb-skeleton';
+  const PREFIX = 'c-skeleton__tb';
   export default {
     name: 'tb-skeleton',
     props: {
