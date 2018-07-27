@@ -1,4 +1,4 @@
-bulid
+build
 example
 node_modules
 src
@@ -9,3 +9,4 @@ static
 .gitignore
 .postcssrc.js
 package-lock.json
+.idea
