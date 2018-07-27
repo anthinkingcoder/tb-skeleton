@@ -5,6 +5,12 @@ a toy bricks of skeleton
 ```bash
  npm i tb-skeleton -S
 ```
+# use
+```bash
+  import Vue from 'Vue'
+  import skeleton from 'tb-skeleton'
+  Vue.use(skeleton)
+```
 
 # start
 ```html
