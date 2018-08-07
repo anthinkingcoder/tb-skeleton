@@ -5,7 +5,6 @@
 </template>
 
 <script>
-  import emitter from '../mixins/emitter'
 
   export default {
     name: 'skeleton',
@@ -16,9 +15,6 @@
     },
     data() {
       return {}
-    },
-    mixins: {
-      emitter
     },
     mounted() {
       //通知tb-Skeleton设置theme
