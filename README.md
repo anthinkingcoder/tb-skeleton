@@ -117,9 +117,9 @@ a toy bricks of skeleton
 ### props
 | param | description | type | default |
 | :-: | :-: | :-: | :-: |
-| theme | the same as skeleton theme | String |  |
-| shape | the same as skeleton shape | String |  |
-| bgColor | the same as skeleton bgColor | String |  |
+| theme | the same as skeleton theme | String | normal |
+| shape | the same as skeleton shape | String | rect |
+| bgColor | the same as skeleton bgColor | String | #dcdcdc |
 | aspectRatio | ratio about width,height  | Number | 1 |
 | height | the tb-skeleton height  | Number,String |  |
 | width | the tb-skeleton width  | String | 100% |
