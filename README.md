@@ -103,7 +103,8 @@ a toy bricks of skeleton
 </script>
 ```
 # more example
-> please see /example
+> please see live demo, [simple demo](https://codepen.io/zhoulin/pen/ajRzBL), [page demo](https://codepen.io/zhoulin/pen/ajRzJV)
+
 
 # skeleton Component
 ### props
