@@ -5,8 +5,8 @@ a toy bricks of skeleton
  ```bash
  $ npm i tb-skeleton -s
  ```
-```
-# use
+ 
+# use npm
 ```js
   import Vue from 'Vue'
   import skeleton from 'tb-skeleton'
@@ -14,6 +14,15 @@ a toy bricks of skeleton
   //or
   import {Skeleton,TbSkeleton} from 'tb-skeleton'
 ```
+
+# use cdn
+```html
+<script src="https://cdn.jsdelivr.net/npm/zy-fetch@1.3.1/dist/zy-fetch.js"></script>
+```
+
+
+
+
 
 # start
 ```html

@@ -1,7 +1,6 @@
 build
 example
 node_modules
-src
 static
 .babelrc
 .editorconfig
