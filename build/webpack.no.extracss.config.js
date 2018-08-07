@@ -22,13 +22,13 @@ module.exports = merge(webpackBaseConfig, {
           {
             loader: 'style-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
             loader: 'css-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           },
           {
@@ -37,7 +37,7 @@ module.exports = merge(webpackBaseConfig, {
           {
             loader: 'sass-loader',
             options: {
-              sourceMap: true,
+              sourceMap: false,
             },
           }
         ],

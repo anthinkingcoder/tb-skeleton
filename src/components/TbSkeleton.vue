@@ -47,8 +47,6 @@
         } else if (this.curTheme === 'gradient') {
           classList.push(`${PREFIX}--gradient`)
         }
-
-
         return classList
       },
       styleList() {
@@ -77,5 +75,6 @@
   }
 </script>
 
-<style scoped lang="scss" type="text/scss">
+<style lang="scss" type="text/scss">
+  @import "../styles/skeleton.scss";
 </style>
