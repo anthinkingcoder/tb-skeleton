@@ -1,6 +1,6 @@
 {
   "name": "tb-skeleton",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "a toy bricks of skeleton",
   "author": "anthinkingcoder jojo837769723@gmail.com",
   "private": false,
@@ -9,9 +9,7 @@
     "build": "webpack --config build/webpack.no.extracss.config.js",
     "build:extracss": "webpack --config build/webpack.extracss.config.js"
   },
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.9.2",
     "sass": "^1.10.3",
