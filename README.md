@@ -2,14 +2,17 @@
 a toy bricks of skeleton
 
 # install
-```bash
- npm i tb-skeleton -S
+ ```bash
+ $ npm i tb-skeleton -s
+ ```
 ```
 # use
-```bash
+```js
   import Vue from 'Vue'
   import skeleton from 'tb-skeleton'
   Vue.use(skeleton)
+  //or
+  import {Skeleton,TbSkeleton} from 'tb-skeleton'
 ```
 
 # start
@@ -20,7 +23,7 @@ a toy bricks of skeleton
   </div>
 </template>
 <script>
-  import {tb-skeleton} from 'tb-skeleton'
+  import {TbSkeleton} from 'tb-skeleton'
   export default {
     components: {
       tb-skeleton
@@ -41,7 +44,7 @@ a toy bricks of skeleton
   </div>
 </template>
 <script>
-  import {tb-skeleton,skeleton} from 'tb-skeleton'
+  import {TbSkeleton,Skeleton} from 'tb-skeleton'
   export default {
     components: {
       tb-skeleton,
@@ -79,7 +82,7 @@ a toy bricks of skeleton
 </template>
 <script>
   import {Col,Row} from 'simple-grid'
-  import {tb-skeleton,skeleton} from 'tb-skeleton'
+  import {TbSkeleton,Skeleton} from 'tb-skeleton'
   export default {
     components: {
       tb-skeleton,

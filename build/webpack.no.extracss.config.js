@@ -9,7 +9,7 @@ module.exports = merge(webpackBaseConfig, {
   output: {
     path: resolve('/dist'),
     publicPath: "/dist/",
-    filename: 'tb-skeleton.noextra.js',
+    filename: 'tb-skeleton.js',
     library: "tb-skeleton",
     libraryTarget: "umd",
     umdNamedDefine: true
