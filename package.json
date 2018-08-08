@@ -1,6 +1,6 @@
 {
   "name": "tb-skeleton",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "a toy bricks of skeleton",
   "author": "anthinkingcoder jojo837769723@gmail.com",
   "private": false,
@@ -54,7 +54,8 @@
     "not ie <= 8"
   ],
   "keywords": [
-    "vue","skeleton"
+    "vue",
+    "skeleton"
   ],
   "license": "MIT"
 }
