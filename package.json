@@ -57,5 +57,9 @@
     "vue",
     "skeleton"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthinkingcoder/tb-skeleton.git"
+  },
   "license": "MIT"
 }
