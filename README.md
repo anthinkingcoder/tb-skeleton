@@ -122,4 +122,4 @@ a toy bricks of skeleton
 | bgColor | the same as skeleton bgColor | String | #dcdcdc |
 | aspectRatio | ratio about width,height  | Number | 1 |
 | height | the tb-skeleton height  | Number,String |  |
-| width | the tb-skeleton width  | String | 100% |
+| width | the tb-skeleton width  | Number,String | 100% |
