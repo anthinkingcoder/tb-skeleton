@@ -28,8 +28,9 @@
             let name = child.$options.name
             if (name === componentName) {
               child.$emit.apply(child, [eventName, {'theme': this.theme, 'bgColor': this.bgColor, 'shape': this.shape}])
+            } else if (name !== 'skeleton') {
+              this.broadcastChildren(child, componentName, eventName)
             }
-            this.broadcastChildren(child, componentName, eventName)
           })
         }
       }
