@@ -52,5 +52,9 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "keywords": [
+    "vue","skeleton"
+  ],
+  "license": "MIT"
 }
