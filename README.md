@@ -10,9 +10,8 @@ a toy bricks of skeleton
 ```js
   import Vue from 'Vue'
   import skeleton from 'tb-skeleton'
+  import  'tb-skeleton/dist/skeleton.css'
   Vue.use(skeleton)
-  //or
-  import {Skeleton,TbSkeleton} from 'tb-skeleton'
 ```
 
 # use cdn
