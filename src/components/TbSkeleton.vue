@@ -1,5 +1,5 @@
 <template>
-  <div :class="classList" :style="styleList">
+  <div class="tb-skeleton" :class="classList" :style="styleList">
     <slot></slot>
   </div>
 </template>
@@ -30,6 +30,12 @@
         }
         return this.height
       },
+      curWidth () {
+        if (!isNaN(this.width)) {
+          return `${this.width}px`
+        }
+        return this.width
+      },
       classList() {
         let classList = []
         classList.push(PREFIX)
@@ -52,7 +58,7 @@
       styleList() {
         return {
           'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
-          'width': this.width,
+          'width': this.curWidth,
           'background-color': this.curBgColor,
         }
       }
