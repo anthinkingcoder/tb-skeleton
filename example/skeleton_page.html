@@ -2,7 +2,8 @@
 <html lang="en">
 <link rel="proload" href="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js" as="script">
 <link rel="proload" href="https://cdn.jsdelivr.net/npm/simple-xgrid@1.2.2/dist/simple-grid.noextra.js" as="script">
-<link rel="proload" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.0/dist/tb-skeleton.js" as="script">
+<link rel="proload" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.6/dist/tb-skeleton.js" as="script">
+<link href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.6/dist/skeleton.css">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
@@ -10,14 +11,17 @@
     .mt-normal {
       margin-top: 10px;
     }
+
     .ml-normal {
       margin-left: 10px;
     }
+
     .border {
-      border:1px solid #eee;
+      border: 1px solid #eee;
       padding: 10px;
       border-radius: 4px;
     }
+
     * {
       box-sizing: border-box;
     }
@@ -28,12 +32,7 @@
   <skeleton theme="opacity" shape="radius">
     <row :gutter="12" type="flex" justify="space-around" align="middle">
       <i-col :span="4">
-        <tb-skeleton  height="25">
-        </tb-skeleton>
-      </i-col>
-
-      <i-col :span="4">
-        <tb-skeleton  height="25">
+        <tb-skeleton height="25">
         </tb-skeleton>
       </i-col>
 
@@ -43,30 +42,35 @@
       </i-col>
 
       <i-col :span="4">
-        <tb-skeleton  height="25">
+        <tb-skeleton height="25">
+        </tb-skeleton>
+      </i-col>
+
+      <i-col :span="4">
+        <tb-skeleton height="25">
         </tb-skeleton>
       </i-col>
 
       <i-col :span="4">
         <row type="flex" align="middle">
           <i-col :span="16">
-            <tb-skeleton  height="25">
+            <tb-skeleton height="25">
             </tb-skeleton>
           </i-col>
           <i-col :span="6" class="ml-normal">
             <row>
               <i-col :span="24">
-                <tb-skeleton  height="15">
+                <tb-skeleton height="15">
                 </tb-skeleton>
               </i-col>
 
               <i-col :span="24" class="mt-normal">
-                <tb-skeleton  height="15">
+                <tb-skeleton height="15">
                 </tb-skeleton>
               </i-col>
 
               <i-col :span="24" class="mt-normal">
-                <tb-skeleton  height="15">
+                <tb-skeleton height="15">
                 </tb-skeleton>
               </i-col>
             </row>
@@ -82,135 +86,135 @@
           <i-col :span="24">
             <row type="flex" justify="center">
               <i-col :span="12">
-                <tb-skeleton  height="20">
+                <tb-skeleton height="20">
                 </tb-skeleton>
               </i-col>
             </row>
           </i-col>
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="24" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
         </row>
       </i-col>
 
-      <i-col :span="4"  class="border">
+      <i-col :span="4" class="border">
         <row type="flex" justify="space-between">
           <i-col :span="24">
             <row type="flex" justify="center">
               <i-col :span="12">
-                <tb-skeleton  height="20">
+                <tb-skeleton height="20">
                 </tb-skeleton>
               </i-col>
             </row>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="24" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
         </row>
       </i-col>
 
-      <i-col :span="4"  class="border">
+      <i-col :span="4" class="border">
         <row type="flex" justify="space-between">
           <i-col :span="24">
             <row type="flex" justify="center">
               <i-col :span="12">
-                <tb-skeleton  height="20">
+                <tb-skeleton height="20">
                 </tb-skeleton>
               </i-col>
             </row>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="24" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
         </row>
       </i-col>
 
-      <i-col :span="4"  class="border">
+      <i-col :span="4" class="border">
         <row type="flex" justify="space-between">
           <i-col :span="24">
             <row type="flex" justify="center">
               <i-col :span="12">
-                <tb-skeleton  height="20">
+                <tb-skeleton height="20">
                 </tb-skeleton>
               </i-col>
             </row>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="24" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
         </row>
       </i-col>
 
-      <i-col :span="4"  class="border">
+      <i-col :span="4" class="border">
         <row type="flex" justify="space-between">
           <i-col :span="24">
             <row type="flex" justify="center">
               <i-col :span="12">
-                <tb-skeleton  height="20">
+                <tb-skeleton height="20">
                 </tb-skeleton>
               </i-col>
             </row>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="24" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
 
           <i-col :span="20" class="mt-normal">
-            <tb-skeleton  height="20">
+            <tb-skeleton height="20">
             </tb-skeleton>
           </i-col>
         </row>

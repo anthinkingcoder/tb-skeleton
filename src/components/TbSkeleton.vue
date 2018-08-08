@@ -24,13 +24,13 @@
       }
     },
     computed: {
-      curHeight () {
+      curHeight() {
         if (!isNaN(this.height)) {
           return `${this.height}px`
         }
         return this.height
       },
-      curWidth () {
+      curWidth() {
         if (!isNaN(this.width)) {
           return `${this.width}px`
         }
@@ -81,6 +81,5 @@
   }
 </script>
 
-<style lang="scss" type="text/scss">
-  @import "../styles/skeleton.scss";
+<style>
 </style>

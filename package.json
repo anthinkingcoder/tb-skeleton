@@ -7,12 +7,14 @@
   "main": "src/index.js",
   "scripts": {
     "build": "webpack --config build/webpack.no.extracss.config.js",
-    "build:extracss": "webpack --config build/webpack.extracss.config.js"
+    "build:extracss": "webpack --config build/webpack.extracss.config.js",
+    "compile": "sass src/styles/skeleton.scss dist/skeleton.css"
   },
   "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "autoprefixer-loader": "^3.2.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
@@ -27,7 +29,10 @@
     "mini-css-extract-plugin": "^0.4.1",
     "node-sass": "^4.9.2",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
+    "postcss": "^7.0.2",
+    "postcss-import": "^12.0.0",
     "postcss-loader": "^2.0.8",
+    "postcss-url": "^7.3.2",
     "sass": "^1.10.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0",
@@ -39,10 +44,7 @@
     "webpack": "^4.16.5",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-cli": "^3.1.0",
-    "webpack-merge": "^4.1.4",
-    "postcss": "^7.0.2",
-    "postcss-import": "^12.0.0",
-    "postcss-url": "^7.3.2"
+    "webpack-merge": "^4.1.4"
   },
   "engines": {
     "node": ">= 6.0.0",
