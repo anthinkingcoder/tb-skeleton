@@ -16,7 +16,7 @@ a toy bricks of skeleton
 
 # use cdn
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.0/dist/tb-skeleton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.8/dist/tb-skeleton.js"></script>
 ```
 
 
