@@ -14,7 +14,7 @@
       aspectRatio: {type: [String, Number], default: 1}, //长宽比
       width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
-      bgColor: {type: [String]},
+      bgColor: {type: [String], default: '#dcdcdc'},
       duration: {type: [Number,String]} //动画时长
     },
     data() {
