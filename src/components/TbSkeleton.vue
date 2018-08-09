@@ -68,7 +68,7 @@
         return {
           'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
           'width': this.curWidth,
-          'background-color': this.curBgColor ? this.curBgColor : DEFAULT_COLOR,
+          'background-color': this.curBgColor,
           'animation-duration': this.curDuration ? `${this.curDuration}s` : ''
         }
       }

@@ -16,8 +16,8 @@ a toy bricks of skeleton
 
 # use cdn
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.2/dist/tb-skeleton.js"></script>
-<link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.2/dist/skeleton.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/tb-skeleton.js"></script>
+<link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/skeleton.css"></script>
 ```
 # live example
 > [simple demo](https://codepen.io/zhoulin/pen/ajRzBL), [page demo](https://codepen.io/zhoulin/pen/ajRzJV)
