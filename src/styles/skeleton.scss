@@ -21,6 +21,14 @@ $prefix: '.c-skeleton__tb';
     animation: gradient 1s linear infinite normal;
     background-size: 200% 100%;
   }
+
+  &--flexouter {
+    animation: flex-outer .5s linear infinite normal;
+  }
+
+  &--flexinner {
+    animation: flex-inner .5s linear infinite normal;
+  }
 }
 
 @keyframes gradient {
@@ -44,7 +52,31 @@ $prefix: '.c-skeleton__tb';
   100% {
     opacity: 1;
   }
-
 }
+
+@keyframes flex-inner {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes flex-outer {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 150%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 
 

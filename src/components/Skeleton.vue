@@ -11,7 +11,8 @@
     props: {
       theme: {type: [String, Number], default: 'normal'},
       bgColor: {type: [String]},
-      shape: {type: [String]}
+      shape: {type: [String]},
+      duration: {type: [Number,String]} //动画时长
     },
     data() {
       return {}
@@ -27,7 +28,7 @@
           $children.forEach((child) => {
             let name = child.$options.name
             if (name === componentName) {
-              child.$emit.apply(child, [eventName, {'theme': this.theme, 'bgColor': this.bgColor, 'shape': this.shape}])
+              child.$emit.apply(child, [eventName, {'theme': this.theme, 'bgColor': this.bgColor, 'shape': this.shape,'duration': this.duration}])
             } else if (name !== 'skeleton') {
               this.broadcastChildren(child, componentName, eventName)
             }
@@ -38,7 +39,6 @@
   }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
 
 </style>

@@ -14,13 +14,15 @@
       aspectRatio: {type: [String, Number], default: 1}, //长宽比
       width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
-      bgColor: {type: [String]}
+      bgColor: {type: [String]},
+      duration: {type: [Number,String]} //动画时长
     },
     data() {
       return {
         curTheme: this.theme,
         curBgColor: this.bgColor,
         curShape: this.shape,
+        curDuration: this.duration
       }
     },
     computed: {
@@ -52,6 +54,12 @@
           classList.push(`${PREFIX}--opacity`)
         } else if (this.curTheme === 'gradient') {
           classList.push(`${PREFIX}--gradient`)
+        } else if (this.curTheme === 'flexible') {
+          classList.push(`${PREFIX}--flexible`)
+        } else if (this.curTheme === 'flex-outer') {
+          classList.push(`${PREFIX}--flexouter`)
+        } else if (this.curTheme === 'flex-inner') {
+          classList.push(`${PREFIX}--flexinner`)
         }
         return classList
       },
@@ -60,6 +68,7 @@
           'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
           'width': this.curWidth,
           'background-color': this.curBgColor,
+          'animation-duration': this.curDuration ? `${this.curDuration}s` : ''
         }
       }
     },
@@ -75,6 +84,10 @@
 
         if (style.shape && !this.curShape) {
           this.curShape = style.shape
+        }
+
+        if (style.duration && !this.curDuration) {
+          this.curDuration = style.duration
         }
       })
     }

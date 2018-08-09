@@ -16,11 +16,11 @@ a toy bricks of skeleton
 
 # use cdn
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.9/dist/tb-skeleton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.0/dist/tb-skeleton.js"></script>
+<link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.0/dist/tb-skeleton.css"></script>
 ```
-
-
-
+# live example
+> [simple demo](https://codepen.io/zhoulin/pen/ajRzBL), [page demo](https://codepen.io/zhoulin/pen/ajRzJV)
 
 
 # start
@@ -31,14 +31,9 @@ a toy bricks of skeleton
   </div>
 </template>
 <script>
-  import {TbSkeleton} from 'tb-skeleton'
-  export default {
-    components: {
-      tb-skeleton
-    }
-  }
 </script>
 ```
+
 # use skeleton
 > use skeleton component, you can  set common props
 ```html
@@ -55,8 +50,8 @@ a toy bricks of skeleton
   import {TbSkeleton,Skeleton} from 'tb-skeleton'
   export default {
     components: {
-      tb-skeleton,
-      skeleton
+      TbSkeleton,
+      Skeleton
     }
   }
 </script>
@@ -101,17 +96,16 @@ a toy bricks of skeleton
   }
 </script>
 ```
-# more example
-> please see live demo, [simple demo](https://codepen.io/zhoulin/pen/ajRzBL), [page demo](https://codepen.io/zhoulin/pen/ajRzJV)
 
 
 # skeleton Component
 ### props
 | param | description | type | default |
 | :-: | :-: | :-: | :-: |
-| theme | ```opacity```,```gradient```, ```normal``` | String | normal |
+| theme | ```opacity```,```gradient```,```flex-outer```,```flex-inner```, ```normal``` | String | normal |
 | shape | tb-skeleton shape, ```circle```、```normal```、```radius``` | String |  |
 | bgColor | tb-skeleton background-color | String |  |
+| duration | tb-skeleton animation duration | String,Number |  |
 # tb-skeleton Component
 ### props
 | param | description | type | default |
@@ -122,3 +116,4 @@ a toy bricks of skeleton
 | aspectRatio | ratio about width,height  | Number | 1 |
 | height | the tb-skeleton height  | Number,String |  |
 | width | the tb-skeleton width  | Number,String | 100% |
+| duration | the tb-skeleton animation duration | String,Number |  |

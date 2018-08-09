@@ -5,8 +5,8 @@
   <title>skeleton demo</title>
   <link rel="proload" href="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js" as="script">
   <link rel="proload" href="https://cdn.jsdelivr.net/npm/simple-xgrid@1.2.2/dist/simple-grid.noextra.js" as="script">
-  <link rel="proload" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.6/dist/tb-skeleton.js" as="script">
-  <link href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.6/dist/skeleton.css">
+  <link rel="proload" href="../dist/tb-skeleton.js" as="script">
+  <link rel="stylesheet" href="../dist/skeleton.css">
 
   <style>
     * {
@@ -24,15 +24,17 @@
       </i-col>
       <i-col :span="16">
         <row>
-          <i-col :span="12" style="padding-left: 10px;margin-top: 5px">
-            <tb-skeleton :aspect-ratio="0.2"></tb-skeleton>
-          </i-col>
-          <i-col :span="24" style="padding-left: 10px;margin-top: 10px">
-            <tb-skeleton :aspect-ratio="0.1"></tb-skeleton>
-          </i-col>
-          <i-col :span="24" style="padding-left: 10px;margin-top: 10px">
-            <tb-skeleton :aspect-ratio="0.1"></tb-skeleton>
-          </i-col>
+          <skeleton duration=".6">
+            <i-col :span="12" style="padding-left: 10px;margin-top: 5px"  >
+              <tb-skeleton :aspect-ratio="0.2" theme="flex-outer"></tb-skeleton>
+            </i-col>
+            <i-col :span="24" style="padding-left: 10px;margin-top: 10px">
+              <tb-skeleton :aspect-ratio="0.1" theme="flex-inner"></tb-skeleton>
+            </i-col>
+            <i-col :span="12" style="padding-left: 10px;margin-top: 10px">
+              <tb-skeleton :aspect-ratio="0.2" theme="flex-outer"></tb-skeleton>
+            </i-col>
+          </skeleton>
         </row>
       </i-col>
     </row>
@@ -41,7 +43,7 @@
 </body>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-xgrid@1.2.2/dist/simple-grid.noextra.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.2.0/dist/tb-skeleton.js"></script>
+<script src="../dist/tb-skeleton.js"></script>
 <script>
   var app = new Vue({
     el: '#app'
