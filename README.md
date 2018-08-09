@@ -103,7 +103,7 @@ a toy bricks of skeleton
 | param | description | type | default |
 | :-: | :-: | :-: | :-: |
 | theme | ```opacity```,```gradient```,```flex-outer```,```flex-inner```, ```normal``` | String | normal |
-| shape | tb-skeleton shape, ```circle```、```normal```、```radius``` | String |  |
+| shape | tb-skeleton shape, ```circle```、```rect```、```radius``` | String |  |
 | bgColor | tb-skeleton background-color | String |  |
 | duration | tb-skeleton animation duration | String,Number |  |
 # tb-skeleton Component
