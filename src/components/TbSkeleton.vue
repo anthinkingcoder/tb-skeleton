@@ -6,6 +6,7 @@
 
 <script>
   const PREFIX = 'c-skeleton__tb';
+  const DEFAULT_COLOR = '#dcdcdc'
   export default {
     name: 'tb-skeleton',
     props: {
@@ -14,7 +15,7 @@
       aspectRatio: {type: [String, Number], default: 1}, //长宽比
       width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
-      bgColor: {type: [String], default: '#dcdcdc'},
+      bgColor: {type: [String]},
       duration: {type: [Number,String]} //动画时长
     },
     data() {
@@ -67,7 +68,7 @@
         return {
           'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
           'width': this.curWidth,
-          'background-color': this.curBgColor,
+          'background-color': this.curBgColor ? this.curBgColor : DEFAULT_COLOR,
           'animation-duration': this.curDuration ? `${this.curDuration}s` : ''
         }
       }
