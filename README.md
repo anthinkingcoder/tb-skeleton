@@ -1,5 +1,5 @@
 # tb-skeleton
-a toy bricks of skeleton
+a vue component about toy bricks of skeleton screen loading
 
 # install
  ```bash
