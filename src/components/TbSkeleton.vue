@@ -12,7 +12,7 @@
     props: {
       shape: {type: String}, //circle or radius or default
       theme: {type: [String, Number]},
-      aspectRatio: {type: [String, Number], default: 1}, //长宽比
+      aspectRatio: {type: [String, Number], default: 0}, //长宽比
       width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
       bgColor: {type: [String]},
