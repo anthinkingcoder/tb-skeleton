@@ -16,7 +16,7 @@ a vue component about toy bricks of skeleton screen loading
 
 # use cdn
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/tb-skeleton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.4/dist/tb-skeleton.js"></script>
 <link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/skeleton.css"></script>
 ```
 # live example
@@ -112,7 +112,7 @@ a vue component about toy bricks of skeleton screen loading
 | :-: | :-: | :-: | :-: |
 | theme | the same as skeleton theme | String | normal |
 | shape | the same as skeleton shape | String | rect |
-| bgColor | the same as skeleton bgColor | String | #dcdcdc |
+| bgColor | the same as skeleton bgColor | String |  |
 | aspectRatio | ratio about width,height  | Number | 1 |
 | height | the tb-skeleton height  | Number,String |  |
 | width | the tb-skeleton width  | Number,String | 100% |

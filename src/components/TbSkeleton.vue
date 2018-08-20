@@ -16,7 +16,7 @@
       width: {type: [String, Number], default: '100%', require: false}, //百分比
       height: {type: [String, Number], require: false},
       bgColor: {type: [String]},
-      duration: {type: [Number,String]} //动画时长
+      duration: {type: [Number, String]} //动画时长
     },
     data() {
       return {
@@ -65,8 +65,14 @@
         return classList
       },
       styleList() {
+        let height = {}
+        if (this.aspectRatio) {
+          height['padding-bottom'] = `${this.aspectRatio * 100}%`
+        } else {
+          height['height'] = this.curHeight
+        }
         return {
-          'padding-bottom': this.curHeight || `${this.aspectRatio * 100}%`,
+          ...height,
           'width': this.curWidth,
           'background-color': this.curBgColor,
           'animation-duration': this.curDuration ? `${this.curDuration}s` : ''

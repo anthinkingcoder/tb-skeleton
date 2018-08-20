@@ -6,9 +6,7 @@
   "private": false,
   "main": "src/index.js",
   "scripts": {
-    "build": "webpack --config build/webpack.no.extracss.config.js",
-    "build:extracss": "webpack --config build/webpack.extracss.config.js",
-    "compile": "sass src/styles/skeleton.scss dist/skeleton.css"
+    "build": "webpack --config build/webpack.production.config.js && sass src/styles/skeleton.scss dist/skeleton.css"
   },
   "dependencies": {},
   "devDependencies": {

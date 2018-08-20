@@ -12,11 +12,22 @@
     * {
       box-sizing: border-box;
     }
+
+    .timeSkeleton__bar {
+      display: flex;
+      padding: 20px;
+      align-items: flex-end;
+      height: 200px;
+    }
+
+    .timeSkeleton__bar * {
+      margin-left: 10px;
+    }
   </style>
 </head>
 <body>
 <div id="app">
-  <skeleton theme="opacity" style="width:200px" shape="radius">
+  <skeleton theme="opacity" style="width:200px" shape="radius" bg-color="#dcdcdc">
     <row>
       <i-col :span="8">
         <tb-skeleton :aspect-ratio="1" shape="circle">
@@ -24,8 +35,8 @@
       </i-col>
       <i-col :span="16">
         <row>
-          <skeleton duration=".6">
-            <i-col :span="12" style="padding-left: 10px;margin-top: 5px"  >
+          <skeleton duration=".6" bg-color="#dcdcdc">
+            <i-col :span="12" style="padding-left: 10px;margin-top: 5px">
               <tb-skeleton :aspect-ratio="0.2" theme="flex-outer"></tb-skeleton>
             </i-col>
             <i-col :span="24" style="padding-left: 10px;margin-top: 10px">
@@ -38,6 +49,10 @@
         </row>
       </i-col>
     </row>
+  </skeleton>
+
+  <skeleton bg-color="#dcdcdc" class="timeSkeleton__bar" theme="opacity">
+    <tb-skeleton width="20" v-for="n in 4" :height="n * 20 + '%'"></tb-skeleton>
   </skeleton>
 </div>
 </body>
