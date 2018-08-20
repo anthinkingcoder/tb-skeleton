@@ -113,7 +113,7 @@ a vue component about toy bricks of skeleton screen loading
 | theme | the same as skeleton theme | String | normal |
 | shape | the same as skeleton shape | String | rect |
 | bgColor | the same as skeleton bgColor | String |  |
-| aspectRatio | ratio about width,height  | Number | 1 |
+| aspectRatio | ratio about width,height  | Number |  |
 | height | the tb-skeleton height  | Number,String |  |
 | width | the tb-skeleton width  | Number,String | 100% |
 | duration | the tb-skeleton animation duration | String,Number |  |

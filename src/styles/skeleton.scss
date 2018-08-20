@@ -17,7 +17,7 @@ $prefix: '.c-skeleton__tb';
     animation: opacity 2s linear infinite normal
   }
   &--gradient {
-    background: linear-gradient(to right, rgba(220, 220, 220, .4) 13%, rgba(220, 220, 220, 1) 14%);
+    background: linear-gradient(to right, rgba(255, 255, 255,.5) 2%,rgba(255, 255, 255,.9) 11%,rgba(255, 255, 255,.8) 13%, transparent 14%);
     animation: gradient 1s linear infinite normal;
     background-size: 200% 100%;
   }
