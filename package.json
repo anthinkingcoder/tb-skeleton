@@ -4,9 +4,11 @@
   "description": "a toy bricks of skeleton",
   "author": "anthinkingcoder jojo837769723@gmail.com",
   "private": false,
-  "main": "src/index.js",
+  "main": "dist/tb-skeleton.js",
   "scripts": {
-    "build": "webpack --config build/webpack.production.config.js && sass src/styles/skeleton.scss dist/skeleton.css"
+    "build": "webpack --config build/webpack.production.config.js && sass src/styles/skeleton.scss dist/skeleton.css",
+    "dev": "webpack --config build/webpack.dev.config.js"
+
   },
   "dependencies": {},
   "devDependencies": {

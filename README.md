@@ -16,7 +16,7 @@ a vue component about toy bricks of skeleton screen loading
 
 # use cdn
 ```html
-<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.4/dist/tb-skeleton.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.4/dist/tb-skeleton.min.js"></script>
 <link ref="stylesheet" href="https://cdn.jsdelivr.net/npm/tb-skeleton@0.3.3/dist/skeleton.css"></script>
 ```
 # live example

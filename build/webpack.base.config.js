@@ -5,14 +5,13 @@ const util = require('./util')
 const resolve = util.resolve
 const assetsPath = util.assetsPath
 module.exports = {
-  mode: 'production',
   entry: {
     main: './src/index.js'
   },
   output: {
     path: resolve('/dist'),
     publicPath: "/dist/",
-    filename: 'tb-skeleton.js',
+    filename: 'tb-skeleton.min.js',
     library: "tb-skeleton",
     libraryTarget: "umd",
     umdNamedDefine: true
@@ -38,9 +37,5 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
-    new UglifyJsPlugin({
-      parallel: true,
-      sourceMap: false,
-    })
   ]
 };
