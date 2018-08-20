@@ -27,7 +27,7 @@ a vue component about toy bricks of skeleton screen loading
 ```html
 <template>
   <div width="20%">
-    <tb-skeleton :aspect-ratio="1" :theme="opacity" :shape="circle"></tb-skeleton>
+    <tb-skeleton :aspect-ratio="1" :theme="opacity" :shape="circle" bg-color="#dcdbdc"></tb-skeleton>
   </div>
 </template>
 <script>
@@ -40,7 +40,7 @@ a vue component about toy bricks of skeleton screen loading
 <template>
   <div>
     <skeleton :theme="opacity" :shape="radius" :bg-color="#dcdbdc">
-     <tb-skeleton  width="30%" :aspect-ratio="1"  :shape="circle" :bg-color="#eee"></tb-skeleton>
+     <tb-skeleton  width="30%" :aspect-ratio="1"  :shape="circle" bg-color="#eee"></tb-skeleton>
      <tb-skeleton  width="30%" :aspect-ratio=".3"></tb-skeleton>
      <tb-skeleton  width="30%" :aspect-ratio=".3"></tb-skeleton>
    </skeleton>
@@ -61,7 +61,7 @@ a vue component about toy bricks of skeleton screen loading
 > about grid layout,please see [simple-grid](https://github.com/anthinkingcoder/simple-grid)
 ```html
 <template>
-<skeleton theme="opacity" style="width:200px" shape="radius">
+<skeleton theme="opacity" style="width:200px" shape="radius" bg-color="#dcdbdc">
     <row>
       <col :span="8">
         <tb-skeleton :aspect-ratio="1" shape="circle">
