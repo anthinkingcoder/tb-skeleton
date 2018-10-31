@@ -10,7 +10,7 @@ module.exports = merge(webpackBaseConfig, {
     publicPath: "/dist/",
     filename: 'tb-skeleton.min.js',
     library: "tb-skeleton",
-    libraryTarget: "umd",
+    libraryTarget: "commonjs2",
     umdNamedDefine: true
   },
   module: {
