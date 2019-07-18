@@ -8,7 +8,7 @@ a vue component about toy bricks of skeleton screen loading
  
 # use npm
 ```js
-  import Vue from 'Vue'
+  import Vue from 'vue'
   import skeleton from 'tb-skeleton'
   import  'tb-skeleton/dist/skeleton.css'
   Vue.use(skeleton)
